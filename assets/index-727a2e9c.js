@@ -197,6 +197,13 @@ input {
 
     font-size: 10px;
   }
+
+  &:not(:placeholder-shown) ~ span {
+    top: -12px;
+    left: 5px;
+
+    font-size: 10px;
+  }
 `,_o=dt.span`
   position: absolute;
   top: 8px;
@@ -207,7 +214,7 @@ input {
   color: #999;
 
   transition: all 0.3s ease;
-`,Dw=()=>{const e=Np(),t=fr(Ih),n=fr($h),r=fr(Uh),o=fr(Bh),i=l=>{l.preventDefault;const{name:s,value:u}=l.target;console.log(s,u),e(R1({[s]:u}))};return U.jsxs(Mw,{children:[U.jsxs(xo,{children:[U.jsx(Co,{type:"text",name:"name",value:t,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"name"})]}),U.jsxs(xo,{children:[U.jsx(Co,{type:"text",name:"username",value:n,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"username"})]}),U.jsxs(xo,{children:[U.jsx(Co,{type:"text",name:"email",value:r,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"email"})]}),U.jsxs(xo,{children:[U.jsx(Co,{type:"text",name:"phone",value:o,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"phone"})]})]})},Fw=dt.div`
+`,Dw=()=>{const e=Np(),t=fr(Ih),n=fr($h),r=fr(Uh),o=fr(Bh),i=l=>{l.preventDefault;const{name:s,value:u}=l.target;console.log(s,u),e(R1({[s]:u}))};return U.jsxs(Mw,{children:[U.jsxs(xo,{children:[U.jsx(Co,{placeholder:"",type:"text",name:"name",value:t,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"name"})]}),U.jsxs(xo,{children:[U.jsx(Co,{placeholder:"",type:"text",name:"username",value:n,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"username"})]}),U.jsxs(xo,{children:[U.jsx(Co,{placeholder:"",type:"text",name:"email",value:r,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"email"})]}),U.jsxs(xo,{children:[U.jsx(Co,{placeholder:"",type:"text",name:"phone",value:o,onChange:i,autoComplete:"false"}),U.jsx(_o,{children:"phone"})]})]})},Fw=dt.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #f0f0f0;
