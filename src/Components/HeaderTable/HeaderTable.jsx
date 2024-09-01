@@ -32,6 +32,7 @@ export const HeaderTable = () => {
     <HeaderMenuWrapper>
       <LabelStyled>
         <InputStyled
+          placeholder=""
           type="text"
           name="name"
           value={name}
@@ -42,6 +43,7 @@ export const HeaderTable = () => {
       </LabelStyled>
       <LabelStyled>
         <InputStyled
+          placeholder=""
           type="text"
           name="username"
           value={username}
@@ -52,6 +54,7 @@ export const HeaderTable = () => {
       </LabelStyled>
       <LabelStyled>
         <InputStyled
+          placeholder=""
           type="text"
           name="email"
           value={email}
@@ -62,6 +65,7 @@ export const HeaderTable = () => {
       </LabelStyled>
       <LabelStyled>
         <InputStyled
+          placeholder=""
           type="text"
           name="phone"
           value={phone}

@@ -32,6 +32,13 @@ export const InputStyled = styled.input`
 
     font-size: 10px;
   }
+
+  &:not(:placeholder-shown) ~ span {
+    top: -12px;
+    left: 5px;
+
+    font-size: 10px;
+  }
 `;
 
 export const PlaceHolderStyled = styled.span`
