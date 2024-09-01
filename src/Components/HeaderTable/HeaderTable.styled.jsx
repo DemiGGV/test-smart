@@ -26,7 +26,7 @@ export const InputStyled = styled.input`
     background-color: #e4e4e4;
   }
 
-  &:focus + span {
+  &:focus ~ span {
     top: -12px;
     left: 5px;
 
