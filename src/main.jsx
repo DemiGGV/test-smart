@@ -1,12 +1,16 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
+import { store } from "./Redux/store.js";
+import { Global  } from "@emotion/react";
+import { GlobalCSS } from "./main.styled.jsx";
+import App from "./App.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/test-smart">
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <Provider store={store}>
+      <Global styles={GlobalCSS} />
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </Provider>
+  </StrictMode>
 );

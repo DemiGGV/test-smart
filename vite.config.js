@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       src: '/src',
-      components: '/src/components',
+      components: '/src/Components',
     },
   },
   base: '/test-smart/',
