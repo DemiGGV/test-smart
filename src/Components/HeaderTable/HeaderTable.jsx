@@ -1,12 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 import {
   getEmailFilter,
   getNameFilter,
   getPhoneFilter,
   getUsernameFilter,
-} from "../../Redux/selectors";
-import { setFilter } from "../../Redux/filters/filtersSlice";
-import { HeaderMenuWrapper, InputStyled } from "./HeaderTable.styled";
+} from '../../Redux/selectors';
+import { setFilter } from '../../Redux/filters/filtersSlice';
+import {
+  HeaderMenuWrapper,
+  InputStyled,
+  LabelStyled,
+  PlaceHolderStyled,
+} from './HeaderTable.styled';
 
 export const HeaderTable = () => {
   const dispatch = useDispatch();
@@ -25,34 +30,46 @@ export const HeaderTable = () => {
 
   return (
     <HeaderMenuWrapper>
-      <InputStyled
-        placeholder="name"
-        type="text"
-        name="name"
-        value={name}
-        onChange={handleChange}
-      />
-      <InputStyled
-        placeholder="username"
-        type="text"
-        name="username"
-        value={username}
-        onChange={handleChange}
-      />
-      <InputStyled
-        placeholder="email"
-        type="text"
-        name="email"
-        value={email}
-        onChange={handleChange}
-      />
-      <InputStyled
-        placeholder="phone"
-        type="text"
-        name="phone"
-        value={phone}
-        onChange={handleChange}
-      />
+      <LabelStyled>
+        <InputStyled
+          type="text"
+          name="name"
+          value={name}
+          onChange={handleChange}
+          autoComplete="false"
+        />
+        <PlaceHolderStyled>name</PlaceHolderStyled>
+      </LabelStyled>
+      <LabelStyled>
+        <InputStyled
+          type="text"
+          name="username"
+          value={username}
+          onChange={handleChange}
+          autoComplete="false"
+        />
+        <PlaceHolderStyled>username</PlaceHolderStyled>
+      </LabelStyled>
+      <LabelStyled>
+        <InputStyled
+          type="text"
+          name="email"
+          value={email}
+          onChange={handleChange}
+          autoComplete="false"
+        />
+        <PlaceHolderStyled>email</PlaceHolderStyled>
+      </LabelStyled>
+      <LabelStyled>
+        <InputStyled
+          type="text"
+          name="phone"
+          value={phone}
+          onChange={handleChange}
+          autoComplete="false"
+        />
+        <PlaceHolderStyled>phone</PlaceHolderStyled>
+      </LabelStyled>
     </HeaderMenuWrapper>
   );
 };

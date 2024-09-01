@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const MainSection = styled.div`
   padding: 50px 20px;
-  text-align: center;
+  margin: 0 auto;
 
   width: 100%;
   height: 100vh;
